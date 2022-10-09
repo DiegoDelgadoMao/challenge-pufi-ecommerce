@@ -1,0 +1,39 @@
+@mixin linesInHeader($right: true) {
+	content: ' ';
+	position: absolute;
+	top: 0;
+	@if $right {
+		right: 0;
+	} @else {
+		right: -10px;
+	}
+	height: 100%;
+	width: 1px;
+	background-color: $main-color;
+}
+
+@mixin mainButton() {
+	padding: 12px 46px;
+	text-decoration: none;
+	border: 2px solid $main-color;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	color: $main-color;
+	font-weight: 300;
+	background-color: transparent;
+}
+
+@mixin subTitleSection() {
+	font-size: 1.4rem;
+	color: rgb(123, 123, 123);
+	text-transform: uppercase;
+	font-weight: 200;
+	letter-spacing: 0.2px;
+}
+
+@mixin titleSection() {
+	font-weight: 400;
+	font-size: 2.8rem;
+	text-transform: uppercase;
+	margin: 4px 0px 40px 0px;
+}

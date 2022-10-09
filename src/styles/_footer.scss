@@ -1,0 +1,48 @@
+footer {
+	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.479);
+	.up {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		justify-content: space-between;
+		padding: 20px 40px;
+		align-items: center;
+		h4 {
+			font-weight: 900;
+			font-size: 2rem;
+		}
+		ul {
+			list-style-type: none;
+			display: flex;
+			flex-direction: row;
+			gap: 20px;
+			font-size: 1.4rem;
+			text-align: center;
+			font-weight: 700;
+		}
+		ul li {
+			cursor: pointer;
+		}
+		p {
+			font-size: 1.2rem;
+			font-weight: 700;
+		}
+		.social-networks {
+			display: flex;
+			column-gap: 4px;
+		}
+		.social-networks svg {
+			font-size: 1.8rem;
+		}
+	}
+	hr {
+		width: 94%;
+		margin: 0px auto;
+	}
+	.down {
+		padding: 20px 40px;
+		font-size: 1.1rem;
+		font-weight: 300;
+		color: rgb(160, 159, 159);
+	}
+}

@@ -1,0 +1,26 @@
+.instagram-gallery {
+	width: 90%;
+	max-width: 540px;
+	padding: 50px 0px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	span {
+		@include subTitleSection;
+	}
+	h3 {
+		@include titleSection;
+	}
+	.gallery {
+		display: grid;
+		width: 100%;
+		grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+		grid-auto-rows: 200px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}

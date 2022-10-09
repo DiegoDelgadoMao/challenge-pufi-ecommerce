@@ -1,0 +1,77 @@
+.newsletter-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0px 0px 60px 0px;
+	span {
+		@include subTitleSection;
+	}
+	h3 {
+		@include titleSection;
+		margin: 4px 0px;
+	}
+	.paragraph {
+		font-size: 1.4rem;
+		font-weight: 500;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	form {
+		width: 90%;
+		max-width: 400px;
+		height: 30px;
+		border: 1px solid #222;
+		display: flex;
+		input {
+			height: 100%;
+			width: 90%;
+			background-color: transparent;
+			border: none;
+			outline: none;
+			padding: 0px 20px;
+			font-weight: 800;
+		}
+		button {
+			height: 100%;
+			display: grid;
+			place-items: center;
+			background-color: transparent;
+			border: none;
+		}
+		svg {
+			cursor: pointer;
+			font-size: 2rem;
+			color: #222;
+		}
+	}
+	.sending {
+		color: #222;
+		font-weight: 800;
+		margin: 10px 0px;
+		animation-name: sending;
+		transition-duration: infinite;
+	}
+	@keyframes sending {
+		0% {
+			color: rgb(0, 0, 0);
+		}
+		50% {
+			color: rgb(62, 62, 62);
+		}
+		100% {
+			color: rgb(107, 105, 105);
+		}
+	}
+	.successfully {
+		font-weight: 900;
+		font-size: 1.6rem;
+		margin: 10px 0px;
+		color: rgb(9, 146, 61);
+	}
+	.error {
+		font-weight: 900;
+		font-size: 1.6rem;
+		margin: 10px 0px;
+		color: rgb(146, 9, 27);
+	}
+}
